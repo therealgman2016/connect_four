@@ -1,0 +1,80 @@
+/* Remove the html if you want to use the @import */
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    color: darkgrey;
+    font-size: 6vmin;
+    letter-spacing: 2vmin;
+}
+
+h2 {
+    font-size: 5vmin;
+    color: grey
+}
+
+#markers {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    gap: 1vmin;
+    margin-top: 1vmin;
+}
+
+#markers>div {
+    border-color: lightgrey transparent transparent;
+    border-width: 5vmin;
+    border-style: solid;
+    transform: scale(0.7);
+}
+
+#markers>div:hover {
+    border-top-color: darkgrey;
+    transform: scale(0.9);
+    transition: transform 150ms ease-in;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
+    gap: 1vmin;
+    margin-top: -2vmin;
+}
+
+#board>div {
+    border: 0.1vmin solid grey;
+    border-radius: 50%;
+}
+
+button {
+    color: grey;
+    border: 0.1vmin solid grey;
+    border-radius: 2vmin;
+    font-size: 4vmin;
+    margin-top: 4vmin;
+}
+
+button:hover {
+    color: white;
+    background-color: darkgrey;
+}
+
+
+
+
+
+
+
